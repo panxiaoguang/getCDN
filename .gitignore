@@ -1,5 +1,5 @@
 .venv/
-.web
-.states
-__pycache__
+.web/
+.states/
+__pycache__/
 

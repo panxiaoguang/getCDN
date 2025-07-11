@@ -2,7 +2,7 @@ import { createContext, useContext, useMemo, useReducer, useState, createElement
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state"
 import { jsx } from "@emotion/react";
 
-export const initialState = {"reflex___state____state": {"is_hydrated_rx_state_": false, "router_rx_state_": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.get_cdn___get_cdn____index_state": {"cdn_urls_rx_state_": [], "github_url_rx_state_": ""}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}}
+export const initialState = {"reflex___state____state": {"is_hydrated_rx_state_": false, "router_rx_state_": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}, "url": "", "route_id": ""}}, "reflex___state____state.get_cdn___get_cdn____index_state": {"cdn_urls_rx_state_": [], "features_box_data_rx_state_": [{"icon": "⚡", "title": "极速访问", "description": "利用全球 CDN 节点，大幅提升文件加载速度"}, {"icon": "🌍", "title": "全球加速", "description": "支持多个主流 CDN 服务商，覆盖全球用户"}, {"icon": "🔄", "title": "实时同步", "description": "自动同步 GitHub 最新版本，确保资源时效性"}], "github_url_rx_state_": ""}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}}
 
 export const defaultColorMode = "light"
 export const ColorModeContext = createContext(null);
@@ -51,7 +51,7 @@ export const initialEvents = () => [
     ...onLoadInternalEvent()
 ]
 
-export const isDevMode = false
+export const isDevMode = true
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})

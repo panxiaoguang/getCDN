@@ -1,5 +1,11 @@
+.states
+assets/external/
+*.db
+.web
+*.py[cod]
 .venv/
 .web/
 .states/
 __pycache__/
+CLAUDE.md
 

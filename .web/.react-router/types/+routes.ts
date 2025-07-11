@@ -31,7 +31,7 @@ type RouteFiles = {
     id: "routes/[404]._index";
     page: "/*";
   };
-  "root.js": {
+  "root.jsx": {
     id: "root";
     page: "/404" | "/" | "/*";
   };
